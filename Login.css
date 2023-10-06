@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flow-root;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000000;
+}
+
+.animated-background {
+    width: 100%;
+    height: 100vh; /* 100% of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    animation: colorChange 3s infinite alternate; /* 3 seconds duration, alternate infinite loop */
+}
+
+@keyframes colorChange {
+    0% {
+        background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    }
+
+    7% {
+        background: linear-gradient(to right, #a18cd1, #fbc2eb);
+    }
+        14% {
+        background: linear-gradient(to right, #d18c8c, #fbc2c2);
+    }
+            21% {
+        background: linear-gradient(to right, #d1ab8c, #fbe4c2);
+    }
+            28% {
+        background: linear-gradient(to right, #ccd18c, #fbf5c2);
+    }
+            35% {
+        background: linear-gradient(to right, #c4d18c, #eafbc2);
+    }
+            42% {
+        background: linear-gradient(to right, #92d18c, #c2fbc5);
+    }
+            49% {
+        background: linear-gradient(to right, #8cd1ab, #c2fbcb);
+    }
+            56% {
+        background: linear-gradient(to right, #8cd1c6, #c2fbe8);
+    }
+            63% {
+        background: linear-gradient(to right, #8cb5d1, #c2e1fb);
+    }
+            70% {
+        background: linear-gradient(to right, #9b8cd1, #c3c2fb);
+    }
+            77% {
+        background: linear-gradient(to right, #a48cd1, #c2c3fb);
+    }
+            84% {
+        background: linear-gradient(to right, #be8cd1, #e4c2fb);
+    }
+            91% {
+        background: linear-gradient(to right, #d18cb2, #f9c2fb);
+    }
+            98% {
+        background: linear-gradient(to right, #d18c95, #fbc2c7);
+    }
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#error-message {
+    color: rgb(255, 0, 0);
+    margin-top: 10px;
+}
